@@ -14,7 +14,7 @@ You've got the choice between "VGG16" and "VGG16" for features extracting method
 
 # Renamer App
 
-When you click on a mini image, the original image open with a little window that allow you to change the name's file. That's a new way to rename your photos for example.
+When you click on a mini image, the original image open in a little window that allow you to change the name's file. That's a new way to rename your photos !
 
 ![Alt](/Example/fish_zoom_and_rename.png "renamer app")
 
