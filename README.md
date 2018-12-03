@@ -27,4 +27,4 @@ Python 3.5
 * Tkinter
 * Numpy
 * Matplotlib
-*(argparse, os)
+* (argparse, os)
