@@ -7,7 +7,7 @@ python interactive_visualization.py --file image/ --visu TSNE --model VGG16
 
 Don't forget the "/" at the end of your file.
 You've got the choice between "PCA" and "TSNE" for dimensional reduction method.
-You've got the choice between "VGG16" and "VGG16" for features extracting method.
+You've got the choice between "VGG16" and "VGG19" for features extracting method.
 
 ![Alt](/Example/fish_general_view.png "example with different species of fish")
 ![Alt](/Example/natural_landscape_object_general_view.png "example with landscape and some objects")
