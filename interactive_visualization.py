@@ -172,7 +172,7 @@ def display_RenameApp(event, ax):
 fig, ax = scatter_image_plot(result, mini_img)
 click = Click(ax, display_RenameApp, button=1)
 
-plt.get_current_fig_manager().window.state('zoomed')
+plt.get_current_fig_manager().window.maxsize()
 plt.show()
 
 
