@@ -41,7 +41,7 @@ mini_img = list()
 
 for name in os.listdir(options.file):
     extension = name.split(".")[1]
-    if (extension == "jpg") | (extension == "JPG") | (extension == "png") | (extension == "PNG"):
+    if extension.lower() in ["jpg", "png"]:
         names_list += [name]
         im = Image.open(options.file + name)
         im = im.resize([224, 224], Image.NEAREST)
@@ -172,7 +172,7 @@ def display_RenameApp(event, ax):
 fig, ax = scatter_image_plot(result, mini_img)
 click = Click(ax, display_RenameApp, button=1)
 
-plt.get_current_fig_manager().window.state('zoomed')
+plt.get_current_fig_manager().window.maxsize()
 plt.show()
 
 
