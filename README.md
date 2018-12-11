@@ -18,6 +18,14 @@ When you click on a mini image, the original image open in a little window that 
 
 ![Alt](/Example/fish_zoom_and_rename.png "renamer app")
 
+multi selection
+
+![Alt](/Example/fish_selection "selection")
+
+multi rename
+
+![Alt](/Example/fish_multi_rename "multi rename")
+
 # Requirements
 
 Python 3.5
