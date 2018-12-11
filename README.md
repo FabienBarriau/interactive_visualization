@@ -20,11 +20,11 @@ When you click on a mini image, the original image open in a little window that 
 
 multi selection
 
-![Alt](/Example/fish_selection "selection")
+![Alt](/Example/fish_selection.png "selection")
 
 multi rename
 
-![Alt](/Example/fish_multi_rename "multi rename")
+![Alt](/Example/fish_multi_rename.png "multi rename")
 
 # Requirements
 
