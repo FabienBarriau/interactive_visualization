@@ -13,13 +13,12 @@ names_list = list()
 mini_img = list()
 
 # Read image folder
-for name in os.listdir(file):
+for name in os.listdir(options.file):
     extension = name.split(".")[1]
     if extension.lower() in ["jpg", "png"]:
-        names_list += [name]
-        im = Image.open(file + name)
-        im = im.resize(MINI_IMG_SHAPE, Image.NEAREST)
-        mini_img += [np.asarray(im)]
+        names_list.append(name)
+        im = Image.open(options.file + name)
+        mini_img.append(np.asarray(im.resize(MINI_IMG_SHAPE, Image.NEAREST)))
 
 result = np.asarray([[1, 2], [1, 4], [3, 4], [4, 5], [3, 1], [5, 3]])
 
