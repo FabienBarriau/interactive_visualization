@@ -39,12 +39,10 @@ mini_img = list()
 for name in os.listdir(options.file):
     extension = name.split(".")[1]
     if extension.lower() in ["jpg", "png"]:
-        names_list += [name]
+        names_list.append(name)
         im = Image.open(options.file + name)
-        im = im.resize([224, 224], Image.NEAREST)
-        img_list += [np.asarray(im)]
-        im = im.resize(MINI_IMG_SHAPE, Image.NEAREST)
-        mini_img += [np.asarray(im)]
+        img_list.append(np.asarray(im.resize([224, 224], Image.NEAREST)))
+        mini_img.append(np.asarray(im.resize(MINI_IMG_SHAPE, Image.NEAREST)))
 
 tensor = np.stack(img_list, axis=0)
 
